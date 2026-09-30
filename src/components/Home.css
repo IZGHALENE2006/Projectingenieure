@@ -1,0 +1,361 @@
+﻿.home-container {
+  width: min(calc(100% - 96px), 1240px);
+  margin-inline: auto;
+}
+
+.home-hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+  background: #101a25;
+}
+
+.home-hero__photo,
+.home-hero__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.home-hero__photo {
+  object-fit: cover;
+  object-position: center 46%;
+}
+
+.home-hero__overlay {
+  background: linear-gradient(90deg, rgb(6 15 26 / 93%) 0%, rgb(6 15 26 / 77%) 34%, rgb(6 15 26 / 23%) 70%, rgb(6 15 26 / 8%) 100%);
+}
+
+.home-hero__content {
+  padding-block: 76px 66px;
+}
+
+.home-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 20px;
+  color: var(--color-blue);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.home-eyebrow::before {
+  width: 28px;
+  height: 2px;
+  flex-shrink: 0;
+  background: currentColor;
+  content: '';
+}
+
+.home-eyebrow--light {
+  color: #a9d5ff;
+}
+
+.home-hero h1 {
+  max-width: 740px;
+  margin: 0;
+  font-size: clamp(36px, 4.3vw, 62px);
+  font-weight: 650;
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.home-hero h1 span {
+  color: #8dc8ff;
+}
+
+.home-hero__description {
+  margin: 26px 0 30px;
+  color: #e0e7ee;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.home-hero__link {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 20px;
+  border: 1px solid rgb(255 255 255 / 35%);
+  border-radius: 4px;
+  color: #fff;
+  background: rgb(255 255 255 / 5%);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+
+.home-hero__link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.home-hero__link:hover {
+  border-color: #8dc8ff;
+  background: rgb(141 200 255 / 15%);
+}
+
+.home-hero__link:focus-visible {
+  outline-color: #a9d5ff;
+}
+
+.home-accreditation {
+  border-top: 1px solid rgb(255 255 255 / 15%);
+  background: rgb(6 17 31 / 83%);
+}
+
+.home-accreditation__inner {
+  display: flex;
+  min-height: 90px;
+  align-items: center;
+  gap: 18px;
+  padding-block: 20px;
+}
+
+.home-accreditation__icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  place-items: center;
+  border: 1px solid rgb(141 200 255 / 28%);
+  border-radius: 50%;
+  color: #8dc8ff;
+}
+
+.home-accreditation__text p {
+  margin: 0 0 5px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.09em;
+}
+
+.home-accreditation__text > span {
+  color: #acc5de;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.12em;
+}
+
+.home-presentation {
+  padding-block: 68px 80px;
+  scroll-margin-top: 185px;
+  background: #f5f7fa;
+}
+
+.home-section-heading {
+  margin-bottom: 32px;
+}
+
+.home-section-heading .home-eyebrow {
+  margin-bottom: 12px;
+}
+
+.home-section-heading h2 {
+  margin: 0;
+  color: var(--color-ink);
+  font-size: clamp(25px, 2.4vw, 34px);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.home-card {
+  position: relative;
+  padding: 30px 28px 32px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 6px 24px rgb(17 35 57 / 3%);
+}
+
+.home-card::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: var(--color-blue);
+  content: '';
+}
+
+.home-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.home-card__icon {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border: 1px solid #e0ecf8;
+  border-radius: 10px;
+  color: var(--color-blue);
+  background: #eef5fc;
+}
+
+.home-card__icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.home-card__number {
+  color: #a1aebb;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+.home-card h3 {
+  margin: 0 0 16px;
+  color: var(--color-ink);
+  font-size: 20px;
+  font-weight: 650;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+.home-card__description {
+  margin: 0 0 24px;
+  color: #5c6776;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.home-card__list {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding: 22px 0 0;
+  border-top: 1px solid #edf0f4;
+  list-style: none;
+}
+
+.home-card__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #354152;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.home-card__list svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--color-blue);
+  stroke-width: 2;
+}
+
+@media (max-width: 1000px) {
+  .home-container {
+    width: calc(100% - 64px);
+  }
+
+  .home-cards {
+    gap: 16px;
+  }
+
+  .home-card {
+    padding-inline: 22px;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .home-card {
+    padding: 28px;
+  }
+
+  .home-hero__overlay {
+    background: linear-gradient(90deg, rgb(6 15 26 / 90%), rgb(6 15 26 / 48%));
+  }
+
+  .home-hero__content {
+    padding-block: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    width: calc(100% - 40px);
+  }
+
+  .home-hero__content {
+    padding-block: 48px;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(30px, 8.5vw, 44px);
+  }
+
+  .home-eyebrow {
+    gap: 9px;
+    font-size: 9px;
+    letter-spacing: 0.13em;
+  }
+
+  .home-eyebrow::before {
+    width: 20px;
+  }
+
+  .home-hero__description {
+    font-size: 14px;
+  }
+
+  .home-accreditation__inner {
+    gap: 12px;
+  }
+
+  .home-accreditation__text p {
+    font-size: 10px;
+    letter-spacing: 0.04em;
+  }
+
+  .home-accreditation__text > span {
+    font-size: 9px;
+    letter-spacing: 0.06em;
+  }
+
+  .home-presentation {
+    padding-block: 44px 48px;
+    scroll-margin-top: 166px;
+  }
+
+  .home-card {
+    padding: 26px 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero__link {
+    transition: none;
+  }
+}
+

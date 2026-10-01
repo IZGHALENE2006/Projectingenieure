@@ -127,7 +127,7 @@ function Home() {
               <HomeIcon name="shield" />
             </span>
             <div className="home-accreditation__text">
-              <p>BET AGRÉÉ — MINISTÈRE DE L’ÉQUIPEMENT ET DE L’EAU</p>
+              <p className='text-4xl'>BET AGRÉÉ PAR L'ÉTAT : D14 D15</p>
               <span>CERT. N° EX/2026/5287/048276</span>
             </div>
           </div>

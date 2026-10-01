@@ -1,10 +1,11 @@
+import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
 
 function Navbar() {
   return (
     <header className="site-header">
       <nav className="navbar" aria-label="Navigation principale">
-        <a className="navbar__brand" href="#accueil" aria-label="H&A Ingénieure — Accueil">
+        <Link className="navbar__brand" to="/" aria-label="H&A Ingénieure — Accueil">
           <img
             className="navbar__logo"
             src="/logo.jpeg"
@@ -13,13 +14,18 @@ function Navbar() {
             height="823"
             fetchPriority="high"
           />
-        </a>
+        </Link>
 
         <ul className="navbar__links">
           <li>
-            <a className="navbar__link" href="#accueil" aria-current="page">
+            <NavLink className="navbar__link" to="/" end>
               Accueil
-            </a>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="navbar__link" to="/services">
+              Nos services
+            </NavLink>
           </li>
         </ul>
       </nav>

@@ -71,13 +71,23 @@
 
 @media (max-width: 600px) {
   .navbar {
-    width: calc(100% - 40px);
-    min-height: 108px;
-    gap: 20px;
+    width: calc(100% - 32px);
+    min-height: 92px;
+    gap: 12px;
   }
 
   .navbar__logo {
-    width: 130px;
+    width: 100px;
+  }
+
+  .navbar__links {
+    gap: 12px;
+  }
+
+  .navbar__link {
+    padding-inline: 3px;
+    font-size: 12px;
+    white-space: nowrap;
   }
 }
 

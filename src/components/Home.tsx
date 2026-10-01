@@ -127,7 +127,7 @@ function Home() {
               <HomeIcon name="shield" />
             </span>
             <div className="home-accreditation__text">
-              <p className='text-4xl'>BET AGRÉÉ PAR L'ÉTAT : D14 D15</p>
+              <p className='text-6xl'>BET AGRÉÉ PAR L'ÉTAT : D14 D15</p>
             </div>
           </div>
         </div>

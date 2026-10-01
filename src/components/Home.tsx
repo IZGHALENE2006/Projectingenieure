@@ -128,7 +128,6 @@ function Home() {
             </span>
             <div className="home-accreditation__text">
               <p className='text-4xl'>BET AGRÉÉ PAR L'ÉTAT : D14 D15</p>
-              <span>CERT. N° EX/2026/5287/048276</span>
             </div>
           </div>
         </div>

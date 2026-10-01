@@ -47,7 +47,7 @@ function NousServices() {
 
           <Link className="service-choice service-choice--link" to="/services/electrique" aria-label="Découvrir le service Génie électrique">
             <div className="service-choice__image">
-              <img src="/Courant%20Fort%20.jpeg" alt="Installations électriques, schémas de distribution et étude d’éclairage d’un bâtiment" width="1536" height="1024" />
+              <img src="CourantFort.jpeg" alt="Installations électriques, schémas de distribution et étude d’éclairage d’un bâtiment" width="1536" height="1024" />
               <span className="service-choice__index" aria-hidden="true">02</span>
             </div>
             <div className="service-choice__body">
